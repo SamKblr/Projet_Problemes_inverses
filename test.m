@@ -2,5 +2,5 @@
 
 Bonjour ceci est une modification!
 
-espagne
+Ceci est une modification effectuée depuis le serveur
 
