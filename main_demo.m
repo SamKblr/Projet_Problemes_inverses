@@ -15,16 +15,17 @@ K = sqrt(pi*sigma2/2)*(1+erf(m/sqrt(sigma2*2)));
 h = histogram(X_test,100);
 hmax = max(h.Values);
 
-% Question 3
-
-
-
 %% Affichage ex2
-
 
 f =  1/K*exp(-(t-m).^2/(2*sigma2));
 fmax = max(f);
 f = f*hmax/fmax;
 hold on
 plot(t,f,'r');
+
+% Question 3
+figure;
+X_test_ar1 = randnt_ar1(m,sigma2,N);
+h_ar1 = histogram(X_test_ar1,100);
+
 

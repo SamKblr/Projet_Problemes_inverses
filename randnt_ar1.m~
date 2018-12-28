@@ -1,6 +1,10 @@
 function X = randnt_ar1(m,sigma2,N)
-y = 
-u = rand(N,1);
-u = unifrnd(N,N)
+M = 2/(1+erf(m/(2*sigma2))); 
+y = rand(1,1);
+u = unifrnd(1,1);
+f = 1/(sqrt(pi*sigma2/2)*1+erf(m/(2*sigma2)))
+while u > 
+
 
 end
+
