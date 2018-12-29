@@ -28,4 +28,6 @@ figure;
 X_test_ar1 = randnt_ar1(m,sigma2,N);
 h_ar1 = histogram(X_test_ar1,100);
 
+% Question 4
+
 
