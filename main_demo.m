@@ -6,7 +6,7 @@ clear all
 % Var
 sigma2 = 3;
 m = 4;
-N = 1e5;
+N = 1e6;
 t = linspace(0,10);
 
 % Questions 1-2
