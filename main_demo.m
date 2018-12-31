@@ -6,7 +6,7 @@ clear all
 % Var
 sigma2 = 3;
 m = 4;
-N = 1e6;
+N = 1e5;
 t = linspace(0,10);
 
 % Questions 1-2
@@ -30,4 +30,6 @@ h_ar1 = histogram(X_test_ar1,100);
 
 % Question 4
 
-
+figure;
+X_test_ar2 = randnt_ar2(m,sigma2,N);
+h_ar2 = histogram(X_test_ar2, 100);
