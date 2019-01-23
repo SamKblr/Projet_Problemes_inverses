@@ -22,12 +22,12 @@ epsilon = epsilon2;
 %% Gradient Descent
 
 % Starting point
-x1 = -0.8;
-x2 = -2.2;
+x1 = -8.8;
+x2 = -9.2;
 x = [x1, x2];
 
 % Maximum number of allowed iterations
-maxiter = 1e4;
+maxiter = 1e6;
 
 % Step size
 alpha = 0.001;

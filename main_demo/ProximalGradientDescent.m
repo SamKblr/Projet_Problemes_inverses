@@ -4,8 +4,8 @@
 % N = nbre_iterations
 % filtre qui a transformé le signal
 
-function [x_opt] = ProximalGradientDescent(H, y, x, lambda)
-N=length(x);
+function [x_opt] = ProximalGradientDescent(H, y, lambda)
+N=length(y);
 xk = ones(N,1);
 dist = inf;
 Nbre_it_max = 100;
@@ -16,10 +16,13 @@ alpha = 0.1;
 f = @(x) (y - H*x)'*(y - H*x) + lambda * sum(abs(x));
 g = @(x) 2*sqrt((y - H*x)'*(y - H*x)) + lambda;
 
+%% Estimation du 
+
+
 while dist>epsilon && IterGD < Nbre_it_max
     grad = g(xk);
     x_new = xk - alpha .* grad;
-    dist = norm(f(x_new), f(xk));
+    dist = norm(f(x_new)-f(xk));
     xk = x_new;
     IterGD = IterGD + 1;
 end
