@@ -34,7 +34,7 @@ alpha = 0.001;
 alphaset = logspace(-3,1,1000);
 
 % Initialize gradient norm, iteration counter
-dist = inf; 
+dist = inf;
 IterGD = 1;
 
 % Plot objective function contours for visualization: 

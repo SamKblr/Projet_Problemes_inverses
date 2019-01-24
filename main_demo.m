@@ -5,8 +5,8 @@ clear all
 %% Simulation of a gaussian law truncated to positive values
 % Var
 sigma2 = 0.5;
-m = 3;
-N = 1e5;
+m = 1;
+N = 1e4;
 t = linspace(0,10);
 
 % Questions 1-2

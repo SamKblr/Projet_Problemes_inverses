@@ -36,8 +36,7 @@ for i=1:MC
     x_omp   =orthogonalmatchingpursuit(y_noisy,H_trunc,sqrt(sigma2*N),nit);
     
     % proximal descent 
-    % ...
-    
+    [x_opt_prox, nbre_iteration_prop] = ProximalGradientDescent(y_noisy,H_trunc, 1)
     % MCMC
     % ...
     
